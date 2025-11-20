@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project in JS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body >
+    <header>
+        <div class="head-container">
+            
+            <div class="img-logo" >
+                <a href="#section-content">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+            
+            <div class="createdby">
+                <p>Created by: Abner Olivarez</p>
+                
+            </div>
+            
+        </div>
+        
+        <nav class="navbar-container" id="navbar">
+            <a href="#" class="logo" id="menu">ABS
+                <!-- <i class="fa-solid fa-caret-right"></i> -->
+            </a>
+            
+            <ul class="nav-links" id="nav-links" >
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="subscribeBtn" id="subscribeBtn">
+                    <button id="navbar-subscribeBtn">Subscribe</button>
+                </li>
+                <li >
+                        <!-- Below is for Cart Quantity-->
+                    <i class="fa-solid fa-cart-shopping"><span id="shopping-cart">0</span></i> 
+                </li>
+                <div class="toggle-icon">
+                    <i class="fa-solid fa-bars" ></i>
+                </div>
+                
+            </ul>
+        </nav>
+
+    </header>
+
+    <section>
+        
+        <div class="cart-details" id="cart-details">
+            
+            <div>
+                <h3>SHOPPING CART</h3>
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+
+            <div id="cart-main-container">
+                <!-- This the output from addtocart goes to
+                     Cart Shop it will display the image item, quantity, amount
+                -->
+            </div>
+
+            <div class="total-amount-container">Total Amount:
+                <span id="total-amount">0</span>
+            </div>
+
+            <button class="place-Order" id="place-Order">Checkout</button>
+               
+        </div>
+        
+    </section>
+    
+
+    <section id="section-content">
+       
+        <div class="slider-img">
+            <div class="slider-text">
+                <h3 class="text1">THE FUTURE OF MOBILITY IS HERE</h3>
+                    <!-- <div class="text1" id="text1">Discover the new SUBARU SOLTERRA powered by two electric motors, 
+                        with a combined 215 horsepower and 249 pound-feet of torque. </div> -->
+                
+                <h3 class="text2">ENJOY THE SUBARU 2025</h3>
+                <h3 class="text3">NEW TECHNOLOGY IN VEHICLE </h3>
+            </div>
+        </div>
+        
+        <h2 class="card-title" >Available Spare Parts</h2>
+        <div class="card-container" id="cardContainer">
+           <!-- Card Title Load From Here -->
+        </div>
+
+
+        <div class="image-container">
+            <div class="image-left">
+                <img src="img/img1.jpg" alt="">
+            </div>
+            
+            <div class="image-right">
+               
+                <h3>RANGE, CHARGING, and BATTERY LIFE</h3>
+                <p id="image-details" style="display:none"><br>
+                    
+                    Subaru says the gross capacity of the Solterra's battery pack is 72.8 kWh. 
+                    The Premium trim carries an EPA-estimated range of 227 miles, while the 
+                    Limited and Touring trims are rated at 222 miles. On our 75-mph fuel economy route, w
+                    hich is part of our extensive testing regimen, the Solterra managed just 200 miles.
+                    While the Solterra has adjustable regenerative braking, 
+                    it does not have a true one-pedal mode that will bring 
+                    the SUV to a stop without requiring the use of the brake pedal.
+                </p>
+                <button id="readBtn">Read More</button>
+            </div>
+            
+
+            <div class="slider">
+                    <button class="prev" >&#10094;</button>
+                <div class="slides-container">
+                    <img src="img/img6.jpg" alt="Last"> 
+                    <img src="img/img2.jpg" alt="Image 1">
+                    <img src="img/img3.jpg" alt="Image 2">
+                    <img src="img/img4.jpg" alt="Image 3">
+                    <img src="img/img5.jpg" alt="Image 4">
+                    <img src="img/img6.jpg" alt="Image 5">
+                    <img src="img/img7.jpg" alt="Image 6">
+                    <img src="img/img2.jpg" alt="First ">
+                </div>
+                    <button class="next" >&#10095;</button>
+            </div>
+            
+            <div class="image-right">
+                <h3> INTERIOR DESIGN 2025 SUBARU SOLTERRA</h3>
+                <p id="image-details1" style="display:none"><br>
+                    <strong>Interior, Comfort, and Cargo</strong>
+                   <br>The Solterra driver looks out over a square-ish steering wheel at a high-mounted digital 
+                    gauge cluster. The windshield's steep slope makes for a deep dashboard top and long A-pillars. There's a big central touchscreen for the infotainment system, which unfortunately lacks a volume knob, and the elevated, bridge-like center console has a rotary shift knob and open storage underneath. The laid-back windshield, large side glass, and panoramic sunroof give the cabin an airy feel. A mix of attractive textures throughout the cabin also contributes to a fetching aesthetic. Along with the various storage spots, including the large bin under the center console, the Solterra makes for a useful travel companion with 24 cubic feet of luggage space, which expands to 64 cubic feet with the rear seats folded flat..
+                </p>
+                <button id="readBtn1">Read More</button>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <section>
+       
+            <div class="subscribe-container">
+                <div>
+                    <button id="subscribeButton">submit</button>
+                </div>
+            </div>
+
+            <div class="body-image" id="technology">
+                <div>
+                    <h2>The Power Of Technology</h2>
+                    <a href="#youtubeVideo"><button id="toggleButton"onClick="toggleButton()" class="body-btn">Play Video</button></a>
+                </div>
+            </div>
+
+            
+    </section>
+
+    <section>
+        <div class="video-container" style="display:none">
+            <iframe 
+            id="youtubeVideo"        
+                src="https://www.youtube.com/embed/qt10wT98CVs" 
+                frameborder="0" 
+                allowfullscreen>
+            </iframe>
+            <h3 class="video-title">Subaru Solterra 2025</h3>
+        </div>
+
+        
+    
+    </section>
+
+    <section class="about" id="about">
+        
+        <div class="car-color">
+            <!-- <img src="img/cars.jpg" alt=""> -->
+            <div class="about"><h1 id="about-car">About</h1>
+             <h4>Fuji Heavy Industries and Subaru</h4>
+                <p>Fuji Heavy Industries started out as the Aircraft Research 
+                Laboratory in 1915, headed by Chikuhei Nakajima. In 1932, the company was 
+                reorganized as Nakajima Aircraft Company, Ltd and soon became a major 
+                manufacturer of aircraft for Japan during World War II.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        
+        <div class="contact-container">
+
+           
+            <div class="contact-details">
+                    <h2>Message Us</h2>
+                   
+                        <div class="input-group">
+                            <input type="text" id="name" name="name"placeholder="Enter your name" >
+                            <label for="name" id="nameInfo"></label><br>
+
+                            <input type="text" id="email" name="email"placeholder="Email" >
+                            <label for="email" id="emailInfo"></label><br>
+
+                            <textarea  id="message" name="message" row="6" placeholder="Message" ></textarea>
+                            <label for="message" id="messageInfo"></label>
+                        </div>
+                        
+                        <button class="formBtn" id="sendButton">Submit</button>
+            </div>
+
+            <div class="contact-info">
+                <div class="name-info">
+                    <h1>Number: </h1>
+                    <p>0998-5850-395</p>
+                </div>
+                <div class="email-info">
+                    <h1>Website: </h1>
+                    <p>www.subaru.com</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+
+    <footer>
+            <p class="footer-container">&#169; <span id="year"></span> All rights reserved</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/cardtitle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
